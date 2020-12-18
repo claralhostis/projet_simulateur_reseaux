@@ -1,0 +1,13 @@
+C:\Users\antoi\Documents\Clara\Simulateur_reseaux\obj\Debug\netcoreapp3.1\Simulateur_reseaux.csprojAssemblyReference.cache
+C:\Users\antoi\Documents\Clara\Simulateur_reseaux\obj\Debug\netcoreapp3.1\Simulateur_reseaux.AssemblyInfoInputs.cache
+C:\Users\antoi\Documents\Clara\Simulateur_reseaux\obj\Debug\netcoreapp3.1\Simulateur_reseaux.AssemblyInfo.cs
+C:\Users\antoi\Documents\Clara\Simulateur_reseaux\obj\Debug\netcoreapp3.1\Simulateur_reseaux.csproj.CoreCompileInputs.cache
+C:\Users\antoi\Documents\Clara\Simulateur_reseaux\bin\Debug\netcoreapp3.1\Simulateur_reseaux.exe
+C:\Users\antoi\Documents\Clara\Simulateur_reseaux\bin\Debug\netcoreapp3.1\Simulateur_reseaux.deps.json
+C:\Users\antoi\Documents\Clara\Simulateur_reseaux\bin\Debug\netcoreapp3.1\Simulateur_reseaux.runtimeconfig.json
+C:\Users\antoi\Documents\Clara\Simulateur_reseaux\bin\Debug\netcoreapp3.1\Simulateur_reseaux.runtimeconfig.dev.json
+C:\Users\antoi\Documents\Clara\Simulateur_reseaux\bin\Debug\netcoreapp3.1\Simulateur_reseaux.dll
+C:\Users\antoi\Documents\Clara\Simulateur_reseaux\bin\Debug\netcoreapp3.1\Simulateur_reseaux.pdb
+C:\Users\antoi\Documents\Clara\Simulateur_reseaux\obj\Debug\netcoreapp3.1\Simulateur_reseaux.dll
+C:\Users\antoi\Documents\Clara\Simulateur_reseaux\obj\Debug\netcoreapp3.1\Simulateur_reseaux.pdb
+C:\Users\antoi\Documents\Clara\Simulateur_reseaux\obj\Debug\netcoreapp3.1\Simulateur_reseaux.genruntimeconfig.cache
