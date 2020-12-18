@@ -9,6 +9,7 @@ namespace Simulateur_reseaux
         private double _coutProduction;
         private double _quantiteCO2;
         private double _quantiteEnergieProduite;
+        private bool _running;
 
         public double CoutProduction
         {
@@ -27,11 +28,23 @@ namespace Simulateur_reseaux
             set => _quantiteEnergieProduite = value;
         }
 
-        public CentraleDeProduction(string name, double cout, double qteCo) : base(name)
+        public bool Running
+        {
+            get => _running;
+            set => _running = value;
+        }
+
+        public CentraleDeProduction(string name, double cout, double qteCo, bool enFonction) : base(name)
         {
             this.CoutProduction = cout;
             this.QuantiteCO2 = qteCo;
             this.QuantiteEnergieProduite = 0;
+            this.Running = enFonction;
+        }
+
+        public virtual void Shutdown()
+        {
+            this.Running = false;
         }
 
         public virtual void UpdateProd()
