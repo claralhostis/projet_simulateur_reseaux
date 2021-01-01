@@ -6,22 +6,11 @@ namespace Simulateur_reseaux
 {
     class Ville : Consommateur
     {
-        private double Consommation;
 
 
-        public Ville (string name, double Consommation):base(name, "Ville")
+        public Ville (string name, double Consommation):base(name, "Ville", Consommation)
         {
-            this.Consommation = Consommation;
         }
-
-
-        public double ConsommationVille
-        {
-            get { return Consommation; }
-            set { Consommation = value; }
-        }
-
-
 
 
     }

@@ -6,15 +6,16 @@ namespace Simulateur_reseaux
 {
     class ParcEolien : CentraleDeProduction
     {
-        public ParcEolien(string name, double couts, double quantCO2) : base(name, couts, quantCO2)
+        public ParcEolien(string name, double quantCO2, bool enFonction) : base(name, quantCO2, enFonction)
         {
         }
 
-        public override void UpdateProd(int meteo)
+        public override void UpdateProd()
         {
-            if (meteo>15 && meteo < 90)
+            int vent = Meteo.getVent();
+            if (vent>15 && vent< 90)
             {
-                QuantiteEnergieProduite = 0.37 * (90 * Math.PI) * (meteo * 1000 / 3600); //W.s-1
+                QuantiteEnergieProduite = 0.37 * (90 * Math.PI) * (vent * 1000 / 3600); //W.s-1
             }
         }
     }

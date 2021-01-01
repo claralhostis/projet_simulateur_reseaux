@@ -25,7 +25,13 @@ namespace Simulateur_reseaux
         {
             this.Conso = conso;
             this.Fourni = fourni;
-            this.PuissanceMaximale = fourni.PuissanceDistrib;
+            this.PuissanceMaximale = this.Conso.Consommation;
+            Console.WriteLine("Nouvelle arrete entre le consommateur " + Conso.Nom + " et le fournisseur " + Fourni.Nom);
+        }
+
+        public override void UpdateEnergieLine()
+        {
+            this.PuissanceMaximale = this.Conso.Consommation;
         }
     }
 }

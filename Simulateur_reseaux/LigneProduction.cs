@@ -26,16 +26,17 @@ namespace Simulateur_reseaux
             this.Prod = prod;
             this.Fourni = fourni;
             this.PuissanceMaximale = prod.QuantiteEnergieProduite;
+            Console.WriteLine("Nouvelle arrete entre le fournisseur " + Fourni.Nom + " et le producteur " + Prod.Nom);
         }
 
-        public void UpdateEnergieLine()
+        public override void UpdateEnergieLine()
         {
             this.PuissanceMaximale = this.Prod.QuantiteEnergieProduite;
         }
 
         public void Show()
         {
-            Console.WriteLine("Centrale de production : " + this.Prod.Nom + " | Fournisseur : " + this.Fourni.Nom + " | Energie prduite et transportée : " + this.PuissanceMaximale);
+            Console.WriteLine("Centrale de production : " + this.Prod.Nom + " | Energie transportée : " + this.PuissanceMaximale + " | Cout : " + this.Prod.CoutProduction);
         }
 
     }

@@ -7,11 +7,7 @@ namespace Simulateur_reseaux
     abstract class Consommateur : Noeud
     {
         private string TypeDeConsommateur;
-
-        public Consommateur(string name, string TypeDeConsommateur) : base(name)
-        {
-            this.TConsommateur = TypeDeConsommateur;
-        }
+        private double _consommation;
 
         public string TConsommateur
         {
@@ -19,6 +15,27 @@ namespace Simulateur_reseaux
             set { TypeDeConsommateur = value; }
         }
 
+        public double Consommation
+        {
+            get => _consommation;
+            set => _consommation = value;
+        }
+
+        public Consommateur(string name, string TypeDeConsommateur, double conso) : base(name)
+        {
+            this.TConsommateur = TypeDeConsommateur;
+            this.Consommation = conso;
+        }
+
+        public void SuccessDistrib()
+        {
+            Console.WriteLine(this.Nom + " a été totalement fournie en énergie.");
+        }
+
+        public void FailDistrib()
+        {
+            Console.WriteLine(this.Nom + " n'a pas été totalement fournie en énergie.");
+        }
 
     }
 }

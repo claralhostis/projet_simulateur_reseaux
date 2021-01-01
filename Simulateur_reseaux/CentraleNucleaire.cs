@@ -6,13 +6,30 @@ namespace Simulateur_reseaux
 {
     class CentraleNucleaire : CentraleDeProduction
     {
-        public CentraleNucleaire(string name, double couts, double quantCO2) : base(name, couts, quantCO2)
-        { 
+        private bool _full;
+        public bool Full
+        {
+            get => _full;
+            set => _full = value;
+        }
+        public CentraleNucleaire(string name, double quantCO2, bool enFonction) : base(name, quantCO2, enFonction)
+        {
+            this.Full = false;
         }
 
         public override void UpdateProd()
         {
-            QuantiteEnergieProduite = (QuantiteEnergieProduite < 6000) ? QuantiteEnergieProduite += 250 : QuantiteEnergieProduite;
+            if (Full != true)
+            {
+                if (QuantiteEnergieProduite < 6000)
+                {
+                    QuantiteEnergieProduite += 250;
+                }
+                else if (QuantiteEnergieProduite == 6000)
+                {
+                    Full = true;
+                }
+            }
         }
     }
 }

@@ -4,13 +4,17 @@ using System.Text;
 
 namespace Simulateur_reseaux
 {
-    class Arete
+    abstract class Arete
     {
         public double PuissanceMaximale;
 
         public Arete()
         {
             this.PuissanceMaximale = 0;
+        }
+
+        public virtual void UpdateEnergieLine()
+        {
         }
     }
 }

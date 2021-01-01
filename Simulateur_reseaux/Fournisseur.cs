@@ -39,7 +39,10 @@ namespace Simulateur_reseaux
             this.PuissanceDistrib = 0;
             foreach (LigneProduction line in this.Prod)
             {
-                this.PuissanceDistrib += line.PuissanceMaximale;
+                if (line.Prod.Running == true)
+                {
+                    this.PuissanceDistrib += line.PuissanceMaximale;
+                }
             }
         }
     }

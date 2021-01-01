@@ -14,17 +14,18 @@ namespace Simulateur_reseaux
             set => _taille = value;
         }
 
-        public CentraleSolaire(string name, double couts, double quantCO2, int taille) : base(name, couts, quantCO2)
+        public CentraleSolaire(string name, double quantCO2, int taille, bool enFonction) : base(name, quantCO2, enFonction)
         {
             Taille = taille;
         }
 
 
-        public override void UpdateProd(int meteo)
+        public override void UpdateProd()
         {
-            if (meteo > 0)
+            int soleil = Meteo.getSoleil();
+            if (soleil > 0)
             {
-                QuantiteEnergieProduite = 77 * Taille * 1000; //Prod : 77 * taille en ha * 1000 pour la conversion en m²
+                QuantiteEnergieProduite = 77 * Taille; //Prod : 77 * taille en ha * 1000 pour la conversion en m²
             }
         }
     }

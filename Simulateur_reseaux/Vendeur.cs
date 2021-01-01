@@ -5,21 +5,10 @@ using System.Text;
 namespace Simulateur_reseaux
 {
     class Vendeur : Consommateur
-
     {
-        public double Consommation;
-
-
-        public Vendeur(string name, double Consommation) : base(name, "Vendeur")
+        public Vendeur(string name, double Consommation) : base(name, "Vendeur", Consommation)
         {
-            this.Consommation = Consommation;
         }
 
-
-        public double ConsommationVendeur
-        {
-            get { return Consommation; }
-            set { Consommation = value; }
-        }
     }
 }

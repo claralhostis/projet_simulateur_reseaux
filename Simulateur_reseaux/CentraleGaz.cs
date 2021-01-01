@@ -7,7 +7,7 @@ namespace Simulateur_reseaux
     class CentraleGaz : CentraleDeProduction
     {
 
-        public CentraleGaz(string name, double couts, double quantCO2): base(name, couts, quantCO2)
+        public CentraleGaz(string name, double quantCO2, bool enFonction): base(name, quantCO2, enFonction)
         {
         }
         public override void UpdateProd()
@@ -19,9 +19,14 @@ namespace Simulateur_reseaux
             } 
             else
             {
-                double coef = rnd.NextDouble() * 2;
+                double coef = rnd.NextDouble() * 3.5;
                 QuantiteEnergieProduite *= coef;
             }
+        }
+
+        public override void UpdateCout()
+        {
+            CoutProduction = (QuantiteEnergieProduite * Marche.getGazPrice()) / 100; 
         }
     }
 }
