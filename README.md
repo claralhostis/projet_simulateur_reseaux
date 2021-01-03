@@ -12,6 +12,6 @@ La gestion météo calcule à la fois la force du vent pour la centrale Parc éo
 
 Nous avons également mis en place un mode qui permet de contrôler les sources d'énergie. Ce mode permet d'éviter qu'il y ait des centrales de production qui soient en marche inutilement: notre simulation nous montre que certaines centrales s'éteignent en fonction des besoins des consommateurs ou bien elles peuvent se mettre en fonctionnement s'il manque de l'énergie pour satisfaire leurs besoins. Il y a donc un message permettant de savoir quels consommateurs ont été correctement fournis en énergie et s'ils en ont eu suffisamment ou pas et la simulation affiche également quelles centrales sont en marche et lesquelles sont éteintes. 
 
-La simulation affiche combien d'énergie a été produite au total (cette quantité correspond donc à l'énergie transportée par les lignes de production et par les lignes de distribution). 
+La simulation affiche combien d'énergie a été produite au total (cette quantité correspond donc à l'énergie qui va pouvoir être distribuée sur la simulation actuelle par le fournisseur aux consommateurs) et la puissance restante correspond à la puissance après la distribution.
 
-Pour la gestion du stockage, le fournisseur distribue l'énergie nécessaire aux consommateurs mais il peut en rester. Cette énergie ne disparaît pas mais est "stockée". 
+Pour la gestion du stockage, le fournisseur distribue l'énergie nécessaire aux consommateurs mais il peut en rester. Cette énergie ne disparaît pas mais est "stockée". Les batteries ont en réserve une certaine quantité d'énergie.
