@@ -16,4 +16,6 @@ La simulation affiche combien d'énergie a été produite au total (cette quanti
 
 Pour la gestion du stockage, le fournisseur distribue l'énergie nécessaire aux consommateurs mais il peut en rester. Cette énergie ne disparaît pas mais est "stockée". Les batteries ont en réserve une certaine quantité d'énergie.
 
+### Diagrammes de classes et de séquences
+
 ![](POO_projet.png)
